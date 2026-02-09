@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: rgb(219, 219, 219);
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+i {
+    color: #207ff3;
+    font-size: 1.3rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    /* border: 1px dashed rgba(255, 255, 255, 0.2); */
+}
+
+body {
+    font-family: "Noto Sans TC", "Jost";
+    background-color: #222;
+    color: var(--text-color);
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+}
+
+aside {
+    display: none;
+}
+
+.link-text {
+    color: #207ff3;
+}
+
+/* ====header===== */
+header>.container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header i {
+    color: #117dbb;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*==== APP BAR =====*/
+
+.bar {
+    background-image: linear-gradient(to right bottom, #aaf0e7, #95dfd2, #81cebd, #6ebea8, #5cad93, #55a087, #4d947c, #468871, #4d7769, #4c645d, #3e4b47, #2a302e);
+    display: flex;
+    padding: 30px 0;
+}
+
+.bar>.container {
+    display: flex;
+    align-items: center;
+}
+
+.app-logo {
+    flex-shrink: 0;
+}
+
+.app-logo>img {
+    width: clamp(100px, 15vw, 200px);
+    height: auto;
+    border-radius: 20%;
+    border: 1px solid white;
+    display: block;
+}
+
+.app-cnt-container {
+    margin-left: 10px;
+    color: white
+}
+
+.btn {
+    color: white;
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 4px 16px;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+
+/* 徽章 */
+.shelf-list {
+    gap: 70px;
+    padding: 0 50px;
+}
+
+.list-item {
+    color: var(--text-color);
+    width: 200px;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.list-item span,
+i {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* =====APP 圖片===== */
+.show-img img {
+    width: 200px;
+}
+
+.img-list {
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+/* ====APP介紹====== */
+.app-intro>.container>p {
+    color: var(--text-color);
+    padding: 20px 0;
+}
+
+/* =====評分===== */
+.comment {
+    margin: 20px 0;
+
+}
+
+.comment-list {
+    gap: 20px;
+}
+
+.comment-card {
+    background-color: #333;
+    border-radius: 20px;
+    padding: 16px;
+    min-width: 300px;
+    max-width: 300px;
+    white-space: normal;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+
+.score-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.score-cnt {
+    display: flex;
+    flex-direction: column;
+}
+
+.score-cnt h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.scor-bar-list {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.bar-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.bar-list-item>span {
+    font-size: 0.6rem;
+    margin-right: 4px;
+    width: 40%;
+    text-align: right;
+}
+
+.bar-main {
+    width: 100%;
+    background-color: #999;
+    height: 3px;
+    border-radius: 30px;
+}
+
+.bar-sub {
+    background-color: #ffffff;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.bar-90 {
+    width: 90%;
+}
+
+.bar-80 {
+    width: 10%;
+}
+
+.bar-70 {
+    width: 8%;
+}
+
+.bar-60 {
+    width: 12%;
+}
+
+.bar-50 {
+    width: 20%;
+}
+
+/* 新功能 */
+.new-release {
+    margin: 30px 0;
+}
+
+.release-detail {
+    display: flex;
+}
+
+.release-date {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: end;
+}
+
+/* APP隱私權 */
+.data-card {
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.data-card>i {
+    color: #207ff3;
+}
+
+.data-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.data-list i,
+.data-list span {
+    font-size: 0.75rem;
+    margin-right: 4px;
+}
+
+.data-list-item {
+    text-align: left;
+}
+
+/* 資訊 */
+.information h4 {
+    margin-bottom: 20px;
+}
+
+.info-list-item {
+    margin-bottom: 20px;
+}
+
+.info-list-item span {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* 頁尾 */
+footer {
+    background-color: #333;
+    padding: 16px 0;
+}
+
+footer p {
+    color: #888;
+}
+
+footer span {
+    color: white;
+}
+
+.lan {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:1024px) {
+    .scroll-container{
+        scrollbar-width: auto;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .scroll-container::-webkit-scrollbar {
+        
+        height: 5px;
+    }
+    .scroll-container::-webkit-scrollbar-track {
+        background: #eeeeee;
+        border-radius: 10px;
+    }
+    .scroll-container::-webkit-scrollbar-thumb {
+        background: #757575;
+        border-radius: 10px;
+    }
+    header {
+        display: none;
+    }
+    .all-cnt {
+        display: flex;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    aside {
+        display: inline;
+        flex-shrink: 0;
+        width: 20%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        border-right: 1px solid #333;
+        padding: 16px 28px;
+    }
+
+    .aside-title {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    aside>input {
+        height: 30px;
+        border-radius: 4px;
+        background-color: #333;
+        border: 1px solid #888;
+        margin: 16px 0;
+        padding-left: 10px;
+        width: 200px;
+    }
+
+    .link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 8px 0 20px;
+    }
+
+    .link-list i {
+        color: #207ff3;
+        font-size: 1rem;
+        margin-right: 8px;
+    }
+
+    .link-list span {
+        font-weight: 400;
+        font-size: 1.rem;
+    }
+
+    .type-link {
+        display: flex;
+        align-items: center;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .app-cnt-container>h4 {
+        font-size: 2rem;
+    }
+
+    .show-img img {
+        width: 300px;
+    }
+
+    .app-intro p {
+        width: 70%;
+    }
+
+    .score-box {
+        width: 60%;
+    }
+
+    .data-card {
+        max-width: 400px;
+    }
+
+    .info-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
