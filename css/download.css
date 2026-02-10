@@ -8,6 +8,7 @@
 
 :root {
     --text-color: rgb(219, 219, 219);
+    --icon-link-color:#207ff3;
 }
 
 p {
@@ -15,7 +16,6 @@ p {
 }
 
 i {
-    color: #207ff3;
     font-size: 1.3rem;
 }
 
@@ -45,9 +45,14 @@ aside {
 }
 
 .link-text {
-    color: #207ff3;
+    color: var(--icon-link-color);
 }
-
+.sction-title{
+    margin-bottom: 0.5rem;
+}
+section{
+    margin: 1.25rem 0;
+}
 /* ====header===== */
 header>.container {
     display: flex;
@@ -57,7 +62,7 @@ header>.container {
 }
 
 header i {
-    color: #117dbb;
+    color: var(--icon-link-color);
 }
 
 .logo {
@@ -100,31 +105,38 @@ header i {
     width: 90px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 4px;
+
     padding: 4px 16px;
     margin-top: 10px;
     font-size: 0.875rem;
     font-weight: bold;
 }
-
+.btn i{
+    font-size: 1rem;
+    color: white;
+}
 
 /* 徽章 */
 .shelf-list {
-    gap: 70px;
+    gap: 3.75rem;
     padding: 0 50px;
 }
 
 .list-item {
     color: var(--text-color);
     width: 200px;
-    text-align: center;
-    padding: 40px 0;
+    padding: 2.25rem 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 0.25rem;
 }
 
 .list-item span,
@@ -136,14 +148,13 @@ i {
 
 /* =====APP 圖片===== */
 .show-img img {
-    width: 200px;
+    max-width: 200px;
 }
 
 .img-list {
     flex-direction: row;
     gap: 20px;
 }
-
 
 /* ====APP介紹====== */
 .app-intro>.container>p {
@@ -154,7 +165,6 @@ i {
 /* =====評分===== */
 .comment {
     margin: 20px 0;
-
 }
 
 .comment-list {
@@ -278,7 +288,7 @@ i {
 }
 
 .data-card>i {
-    color: #207ff3;
+    color: var(--icon-link-color);
 }
 
 .data-list {
@@ -329,6 +339,8 @@ footer span {
     margin-bottom: 20px;
 }
 
+
+/* ==========PC   RWD====== */
 @media screen and (min-width:1024px) {
     .scroll-container{
         scrollbar-width: auto;
@@ -379,7 +391,7 @@ footer span {
         border: 1px solid #888;
         margin: 16px 0;
         padding-left: 10px;
-        width: 200px;
+        width: 80%;
     }
 
     .link-list {
@@ -390,14 +402,14 @@ footer span {
     }
 
     .link-list i {
-        color: #207ff3;
+        color: var(--icon-link-color);
         font-size: 1rem;
         margin-right: 8px;
     }
 
     .link-list span {
         font-weight: 400;
-        font-size: 1.rem;
+        font-size: 1rem;
     }
 
     .type-link {
