@@ -8,7 +8,7 @@
 
 :root {
     --text-color: rgb(219, 219, 219);
-    --icon-link-color:#207ff3;
+    --icon-link-color: #207ff3;
 }
 
 p {
@@ -46,19 +46,25 @@ aside {
 
 .link-text {
     color: var(--icon-link-color);
+    cursor: pointer;
 }
-.sction-title{
+
+.sction-title {
     margin-bottom: 0.5rem;
 }
-section{
+
+section {
     margin: 1.25rem 0;
 }
-h1{
+
+h1 {
     font-size: 1.5rem;
 }
-h2{
+
+h2 {
     font-size: 1.125rem;
 }
+
 /* ====header===== */
 header>.container {
     display: flex;
@@ -121,8 +127,10 @@ header i {
     margin-top: 10px;
     font-size: 0.875rem;
     font-weight: bold;
+    cursor: pointer;
 }
-.btn i{
+
+.btn i {
     font-size: 1rem;
     color: white;
 }
@@ -209,7 +217,8 @@ i {
     font-size: 3rem;
     font-weight: bold;
 }
-.score-cnt-r{
+
+.score-cnt-r {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -354,26 +363,31 @@ footer span {
 
 /* ==========PC   RWD====== */
 @media screen and (min-width:1024px) {
-    .scroll-container{
+    .scroll-container {
         scrollbar-width: auto;
         padding-right: 20px;
         padding-bottom: 20px;
     }
+
     .scroll-container::-webkit-scrollbar {
-        
+
         height: 5px;
     }
+
     .scroll-container::-webkit-scrollbar-track {
         background: #eeeeee;
         border-radius: 10px;
     }
+
     .scroll-container::-webkit-scrollbar-thumb {
         background: #757575;
         border-radius: 10px;
     }
+
     header {
         display: none;
     }
+
     .all-cnt {
         display: flex;
         min-height: 100vh;
@@ -404,6 +418,7 @@ footer span {
         margin: 16px 0;
         padding-left: 10px;
         width: 80%;
+        color: white;
     }
 
     .link-list {
@@ -427,6 +442,7 @@ footer span {
     .type-link {
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     main {
@@ -442,6 +458,11 @@ footer span {
         font-size: 2rem;
     }
 
+    .shelf-list {
+        justify-content:space-between;
+        
+    }
+
     .show-img img {
         width: 300px;
     }
@@ -454,13 +475,16 @@ footer span {
         width: 50%;
         justify-content: start;
     }
-    .score-cnt-r{
+
+    .score-cnt-r {
         width: 80%;
     }
-    .score-cnt-r>p{
+
+    .score-cnt-r>p {
         text-align: right;
     }
-    .bar-list-item>span{
+
+    .bar-list-item>span {
         width: 70px;
     }
 
