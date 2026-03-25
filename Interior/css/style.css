@@ -1,0 +1,850 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* -----global style----- */
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  border: none;
+}
+
+h2 {
+  font-family: "DM Serif Display";
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "DM Serif Display";
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+body {
+  background: url("../images/phone/bg-m.jpg") repeat-y;
+  background-size: 100%;
+  background-position: center;
+}
+
+section {
+  padding: 20px 0;
+}
+
+/* ------Banner----- */
+#Banner {
+  background: url("../images/phone/Banner.png") no-repeat;
+  background-size: 100%;
+  background-position: bottom center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 100px;
+}
+
+.container {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+}
+
+.desc {
+  font-family: "Jost";
+}
+
+.get {
+  font-family: "Jost";
+  padding: 16px 25px;
+  background-color: #292f36;
+  color: white;
+  border-radius: 18px;
+  font-size: 1.125rem;
+  margin-top: 20px;
+}
+
+i {
+  font-size: 1.125rem;
+  color: #cda274;
+}
+
+/* -----Header----- */
+header .container{
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-btn i{
+  font-size: 40px;
+}
+nav{
+  display:none;
+}
+
+/* -----Work----- */
+#Work .container{
+  background-color: transparent;
+}
+.work-card-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.Sub-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+
+span {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 1.5625rem;
+  margin-bottom: 10px;
+}
+
+.Sub-Content .desc {
+  text-align: center;
+  font-size: 1.375rem;
+}
+
+.read-btn {
+  background: transparent;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+/* -----About----- */
+#About .container {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.info-img img {
+  width: 100%;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.intro-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.intro-box .desc {
+  margin-bottom: 20px;
+}
+
+.contact-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.phone {
+  font-family: "Jost";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.circle-icon {
+  width: 90px;
+  height: 90px;
+  background-color: #f4f0ec;
+  border-radius: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-icon i {
+  font-size: 2rem;
+}
+
+/* -----Feedback----- */
+#Feedback .container {
+  background-color: #f4f0ec;
+}
+
+#Feedback .container>h2 {
+  text-align: center;
+}
+
+.feedback-card {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 70px 20px;
+}
+
+.p-info-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.p-desc {
+  font-family: "Jost";
+  font-size: 18px;
+}
+
+.p-img img {
+  width: 70px;
+  height: 70px;
+}
+
+/* -----Logo----- */
+#Client-Logo .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.logo {
+  margin: 20px;
+}
+
+/* -----Project----- */
+#Project .container{
+  background-color:transparent ;
+}
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.project-card {
+  margin-bottom: 3.125rem;
+}
+
+.project-info .desc {
+  text-align: center;
+}
+
+.pro-img img {
+  width: 100%;
+}
+
+.pro-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.pro-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #F4F0EC;
+  border-radius: 50%;
+}
+
+.pro-icon i {
+  font-size: 2rem;
+}
+
+img.card1 {
+  border-top-right-radius: 50px;
+}
+
+img.card2 {
+  border-top-left-radius: 50px;
+}
+
+img.card3 {
+  border-bottom-right-radius: 50px;
+}
+
+img.card4 {
+  border-bottom-left-radius: 50px;
+}
+
+/* -----Count----- */
+#Counter {
+  background-color: #F4F0EC;
+}
+
+#Counter .container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.counter {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter .num {
+  color: #CDA274;
+  font-family: "DM Serif Display";
+  font-size: 3.75rem;
+}
+
+.counter .desc {
+  font-family: "Jost";
+}
+
+/* -----Blog----- */
+.blog-desc {
+  text-align: center;
+}
+
+.colorcard {
+  background-color: #F4F0EC;
+}
+
+.blog-card {
+  border-radius: 50px;
+}
+
+.blog-body {
+  border: 1px solid #E7E7E7;
+  border-radius: 50px;
+  margin: 20px 0;
+}
+
+.blog-contenet {
+  margin: 20px;
+  border-radius: 40px;
+}
+
+.blog-img {
+  position: relative;
+}
+
+.blog-img img {
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+}
+
+.blog-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #F4F0EC;
+  border-radius: 50%;
+}
+
+.blog-icon i {
+  color: black;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  background-color: white;
+  border-radius: 8px 8px 8px 0;
+  color: #333;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+}
+
+/* -----Contact----- */
+#Contact {
+  background-color: #292F36;
+  border-radius: 20px;
+}
+
+#Contact .container {
+  background-color: transparent;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-title {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-title h2,
+.text-title .desc {
+  color: white;
+  text-align: center;
+}
+
+.contact-btn {
+  background-color: #CDA274;
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding: 20px 30px;
+  border-radius: 18px;
+  box-shadow: 0px 10px 20px #292F36;
+}
+
+.contact-btn i {
+  color: black;
+}
+
+/* -----Footer----- */
+footer .container{
+  background-color: transparent;
+}
+.interno-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sub-content {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.brand-logo {
+  text-align: center;
+}
+
+.icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon i {
+  color: #292F36;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.link {
+  font-family: "Jost";
+}
+
+.menu {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.copyright {
+  font-family: "Jost";
+  text-align: center;
+}
+
+
+/* ----------------RWD平板---------------------- */
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+  body {
+  background: url("../images/bg.jpg") repeat-y;
+  background-size: 100%;
+  background-position: center;
+}
+/* ----Banner---- */
+  #Banner {
+    background: url("../images/tablet/Banner.jpg") no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+    border-bottom-left-radius: 150px;
+  }
+
+  .container {
+    justify-content: flex-start;
+    background-color: transparent;
+    margin: auto;
+  }
+
+  .hero-info {
+    width: 40%;
+  }
+
+/* ----Header----- */
+  .menu-btn i{
+  display:none;
+}
+nav{
+  display:block;
+}
+.navbar{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.navbar li{
+  width: 65px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------Work----- */
+  #Work>.container {
+    flex-direction: row;
+    gap: 1.5rem;
+    margin: 10px auto;
+  }
+
+  .work-card-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .work-card {
+    width: 33%;
+    justify-content: center;
+    margin: 0 10px;
+  }
+
+  .Sub-Content {
+    padding: 0;
+  }
+
+/* -----About----- */
+  #About>.container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .intro-box {
+    order: 0;
+    width: 48%;
+    align-items: flex-start;
+  }
+
+  .intro-box .section-title {
+    text-align: left;
+  }
+
+  .info-img {
+    width: 50%;
+  }
+
+/* -----Feedback----- */
+  #Feedback .container {
+    padding: 30px 10px;
+  }
+
+  .feedback-card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 20px;
+  }
+
+  .feedback-card {
+    justify-content: flex-start;
+    width: 33%;
+    margin: 0 10px;
+    padding: 30px 20px;
+  }
+
+/* -----Logo----- */
+  #Client-Logo .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #Client-Logo img {
+    width: 95%;
+  }
+
+  /* -----Project----- */
+  #Project .desc {
+    width: 50%;
+  }
+
+  .project-card-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project-card {
+    width: 48%;
+  }
+
+  /* -----Counter----- */
+  #Counter .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 50px;
+  }
+
+  /* -----Blog----- */
+  .blog-card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .blog-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-desc {
+    width: 60%;
+    text-align: center;
+  }
+
+  .blog-card {
+    width: 32%;
+  }
+
+  .tag {
+    width: 100px;
+    height: 30px;
+    top: 73%;
+    left: 4%;
+  }
+
+  /* -----Contact----- */
+  #Contact {
+    border-radius: 40px;
+  }
+
+  .contact-box {
+    padding: 30px 80px;
+  }
+
+  .contact-btn {
+    padding: 30px 40px;
+  }
+
+  /* -----Footer----- */
+  .brand-logo {
+    text-align: left;
+  }
+
+  .interno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .interno-box {
+    align-items: flex-start;
+    width: 30%;
+  }
+
+  .sub-content {
+    text-align: left;
+  }
+
+  .brand-logo img {
+    width: 70%;
+  }
+
+  .icon {
+    width: 60%;
+  }
+
+  .menu {
+    text-align: left;
+  }
+
+  .interno .menu:nth-child(4) {
+    width: 30%;
+  }
+
+}
+
+/* ----------------RWD 電腦-------------------- */
+@media screen and (min-width: 1025px) {
+  :root {
+    font-size: 18px;
+  }
+/* -----Banner----- */
+  #Banner {
+    background: url("../images/Banner.jpg") no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+    height: 600px;
+    border-bottom-left-radius: 300px;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1140px;
+    background-color: transparent;
+  }
+
+  .hero-info {
+    width: 30%;
+  }
+
+  /* -----Header----- */
+  header .container{
+    margin: auto;
+  }
+  .navbar li{
+  width: 80px;
+  height: 50px;}
+
+  /* -----Work------ */
+  #Work>.container {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin: 100px auto;
+  }
+
+  .read {
+    font-size: 16px;
+  }
+
+  /* -----About----- */
+  #About .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .intro-box {
+    order: 0;
+    width: 30%;
+    align-items: flex-start;
+  }
+
+  .info-img {
+    width: 60%;
+  }
+
+  .section-title {
+    text-align: left;
+  }
+
+  /* -----Feedback----- */
+  #Feedback .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 10px;
+  }
+
+  #Feedback h2 {
+    width: 40%;
+  }
+
+  .feedback-card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+
+  .feedback-card {
+    padding: 60px 40px;
+    width: 33%
+  }
+
+  /* -----Blog----- */
+  .blog-card {
+    width: 30%;
+  }
+
+  .tag {
+    width: 130px;
+    height: 40px;
+    top: 75%;
+    left: 5%;
+  }
+
+  /* -----Contact----- */
+  .contact-box {
+    padding: 80px 300px;
+  }
+
+  .interno .menu:nth-child(4) {
+    width: 25%;
+  }
+}
