@@ -14,6 +14,7 @@
 - CSS 排版技巧（Flexbox / Grid）
 - 視覺稿像素級還原
 
+[點此前往頁面](https://yuzh1363.github.io/UIUX03-20/Interior/index.html)
 ---
 
 ### 2. 期中專題 App — App Store 頁面切版
@@ -24,6 +25,7 @@
 - App Store 頁面結構
 - 截圖展示版面配置
 
+[點此前往頁面](https://yuzh1363.github.io/UIUX03-20/Midterm/index.html)
 ---
 
 ## 🛠️ 使用技術
